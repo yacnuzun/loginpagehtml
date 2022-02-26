@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        span{
+            display: block;
+        }
+        
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg,#17c3e7 0%,rgb(120,114,238) 35%,#da1cfa 100% );
+        }
+        div{
+            width: 60%;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+        .main{
+            width: 35%;
+            height: 90vh;
+            position: relative;
+
+            background-color: white;
+        }
+        .title{
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-10%);
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .inpspn{
+            font-size: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight:bold ;
+        }
+        input{
+            font-weight: normal;
+        }
+        input::placeholder{
+            color: #F2F3F4;
+        }
+        .name{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            width: 60%;
+            transform: translateX(-50%) translateY(-20%);
+        }
+        .name>input{
+            border-style: hidden;
+            border-bottom-style: solid;
+            outline: 0px;
+            width: 100%;
+            font-weight: medium;
+        }
+        .email{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            
+            width: 60%;
+            transform: translateX(-50%) translateY(-40%);
+        }
+        .email>input{
+            border-style: hidden;
+            border-bottom-style: solid;
+            outline: 0px;
+            width: 100%;
+        }
+        .services{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            
+            
+            width: 60%;
+            transform: translateX(-50%) translateY(-40%);
+        }
+        .services>select{
+            width: 100%;
+            border-style: hidden;
+            border-bottom-style: solid;
+            margin-bottom: 30px;
+        }
+        .budged{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            
+            
+            width: 60%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .budged>select{
+            width: 100%;
+            border-style: hidden;
+            border-bottom-style: solid;
+            margin-bottom: 30px;
+        }
+        .message{
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            height: 20%;
+            transform: translateX(-50%) translateY(-60%);
+        }
+        .message>textarea{
+            border-style: hidden;
+            border-bottom-style: solid;
+            outline: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        textarea::placeholder{
+            color: #F2F3F4;
+        }
+        .submit{
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            width: 60%;
+            height: 6%;
+            transform: translateX(-50%)translateY(-85%);
+            background: linear-gradient(45deg,#17c3e7 0%,rgb(120,114,238) 35%,#da1cfa 100% );
+            border: 0px;
+            border-radius: 10px;
+            color: white;
+        }
+        .submit>i{ 
+            display: inline;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <span>Say Hello!</span> 
+        </div>
+        <div class="name">
+            <span class="inpspn">Your Name</span>
+            <input type="text" class="nametxt" placeholder="Enter your name">
+        </div>
+        <div class="email">
+            <span class="inpspn">Email</span>
+            <input type="text" class="emailtxt" placeholder="Enter your email address">
+        </div>
+        <div class="services">
+            <span class="inpspn">Needed Services</span>
+            <select name="dersler">
+
+                <option value="0">Chose Services:</option>
+            
+                <option>option1</option>
+            
+                <option>option2</option>
+            
+                <option>option3</option>
+            
+                <option>option4</option>
+            
+            </select>
+        </div>
+          <div class="budged">  
+              <span class="inpspn">Budged</span>
+            <select name="dersler">
+
+                <option value="0">Select Budged:</option>
+            
+                <option>option1</option>
+            
+                <option>option2</option>
+            
+                <option>option3</option>
+            
+                <option>option4</option>
+            
+            </select>
+        </div>
+        <div class="message">
+            <span class="inpspn">Message</span>
+            <textarea placeholder="Your message is here..."></textarea>
+        </div>
+        <button class="submit"> Submit <i class="fa-solid fa-right">-- ></i></button>
+    </div>
+</body>
+</html>
