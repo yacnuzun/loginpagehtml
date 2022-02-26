@@ -52,10 +52,11 @@
             font-weight:bold ;
         }
         input{
-            font-weight: normal;
+            font-weight: bold;
         }
         input::placeholder{
-            color: #F2F3F4;
+            /* color: #F2F3F4; */
+            opacity: 0.1;
         }
         .name{
             position: absolute;
@@ -67,9 +68,8 @@
         .name>input{
             border-style: hidden;
             border-bottom-style: solid;
-            outline: 0px;
             width: 100%;
-            font-weight: medium;
+            font-weight: bold;
         }
         .email{
             position: absolute;
@@ -82,7 +82,6 @@
         .email>input{
             border-style: hidden;
             border-bottom-style: solid;
-            outline: 0px;
             width: 100%;
         }
         .services{
@@ -130,9 +129,9 @@
             height: 100%;
         }
         textarea::placeholder{
-            color: #F2F3F4;
+            opacity: 0.1;
         }
-        .submit{
+        button{
             position: absolute;
             top: 85%;
             left: 50%;
@@ -143,10 +142,8 @@
             border: 0px;
             border-radius: 10px;
             color: white;
-        }
-        .submit>i{ 
-            display: inline;
-            
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -199,7 +196,12 @@
             <span class="inpspn">Message</span>
             <textarea placeholder="Your message is here..."></textarea>
         </div>
-        <button class="submit"> Submit <i class="fa-solid fa-right">-- ></i></button>
+        <div>
+            <button > Submit
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+        
     </div>
 </body>
 </html>
